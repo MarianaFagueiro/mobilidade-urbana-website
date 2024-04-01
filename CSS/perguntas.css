@@ -1,100 +1,116 @@
-.header {
-    background-color: #430387;
-    padding: 10px; 
-    text-align: left; 
-    margin: 0; 
-    border-top: none;
-    position: fixed; /* Fixa o header na parte superior da página */
-    width: 100%; /* Define a largura do header como 100% da largura da tela */
-    top: 0; /* Alinha o topo do header com o topo da janela do navegador */
-    z-index: 1000; /* Garante que o header fique acima de outros elementos na página */
-}
-
-.header img {
-    max-width: 15%;
-    height: auto;
-    display: inline-block;
-    vertical-align: left; 
-    margin-bottom: 10px;
-    margin-right: 0px; 
-    margin-left: 25px;
-}
-
 body {
     color: #F6F5F0;
-    margin-top: 60px; /* Adiciona margem no topo do corpo para evitar que o conteúdo fique atrás do header */
-}
-
-
-hr {
-    border: none; 
-    border-top: 100px solid #2e2e2e; 
-    margin-top: 4%;
-}
-
-h1 {
-    color: #FFC745;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-align: center;
-    margin-top: 300px; 
-    padding: 15px;
-}
-
-h2 {
-    color: #430387;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-align: center;
-    margin: 10px; 
-    padding: 15px;
-
-}
-
-.img1 {
-    max-width: 50%; /* Ajuste o tamanho da imagem conforme necessário */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    color: #FFA500;
+    text-decoration: none;
+  }
+  
+  .header {
+    background-color: #430387;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    padding: 10px;
+  }
+  
+  .header img {
     height: auto;
+    max-width: 15%;
     display: block;
-    margin: 0 auto; /* Centraliza a imagem horizontalmente */
-    position: absolute; /* Permite posicionamento absoluto */
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%); /* Centraliza a imagem vertical e horizontalmente */
-}
-
-.img2 {
-    max-width: 25%; 
-    height: auto;
-    margin: 50px auto; /* Adicione margem superior e inferior para criar espaço */
-    display: block; 
-    float: right; /* Posiciona a imagem no canto direito */
-}
-
-h3 {
+    margin: 0 auto;
+  }
+  
+  hr {
+    border: none;
+    border-top: 100px solid #2e2e2e;
+    margin: 4% 0;
+  }
+  
+  h1 {
+    color: #FFC745;
+    text-align: center;
+    margin-top: 200px;
+    padding: 15px;
+  }
+  
+  h2 {
     color: #430387;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-align: right; /* Alinha o texto à direita */
-    margin: 10px auto; /* Adiciona margem superior e inferior */
-}
-
-.footer {
+    text-align: center;
+    margin: 10px 0;
+    padding: 15px;
+  }
+  
+  .content-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 50px 0;
+  }
+  
+  .text-container {
+    flex-basis: 60%;
+    padding-right: 20px;
+  }
+  
+  .text-container ul {
+    padding-left: 20px;
+  }
+  
+  .text-container li {
+    margin-bottom: 10px;
+  }
+  
+  .text-container p {
+    margin: 0;
+  }
+  
+  .footer {
     background-color: #430387;
     padding: 10px;
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.logo img {
-    max-width: 100px; 
+    margin-top: 50px;
+  }
+  
+  .footer .logo img {
+    max-width: 100px;
     height: auto;
     margin: 20px;
-}
-
-.privacy p {
+  }
+  
+  .footer .privacy ul {
+    list-style-type: none;
     margin: 0;
-    color: #FFA500;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-align: left;
-    margin-right: 20px; /* Ajuste conforme necessário */
-}
-
+    padding: 0;
+    display: flex;
+  }
+  
+  .footer .privacy li {
+    margin-right: 10px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .content-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .text-container {
+      flex-basis: 100%;
+    }
+  
+    .img-container {
+      display: none;
+    }
+  }
