@@ -1,0 +1,98 @@
+.header {
+    padding: 10px;
+    text-align: left;
+    margin: 0;
+    border-top: none;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    color: #430387;
+    background-image: url('./imagens/logo_yala.png'); /* Adicionando a imagem como fundo */
+    background-size: contain; /* Ajustando o tamanho da imagem */
+    background-repeat: no-repeat; /* Evitando que a imagem se repita */
+    background-position: center; /* Posicionando a imagem no centro */
+}
+
+  .header img {
+    max-width: 15%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+  }
+  
+  body {
+    color: #F6F5F0;
+    margin-top: 80px;
+  }
+  
+  hr {
+    border: none;
+    border-top: 100px solid #2e2e2e;
+    margin-top: 4%;
+  }
+  
+  h1,
+  h2 {
+    color: #FFC745;
+    text-align: center;
+    margin-top: 0;
+    padding: 15px;
+  }
+  
+  h2 {
+    color: #430387;
+    text-align: center;
+    margin: 10px;
+    padding: 15px;
+  }
+  
+  .content-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .img1 {
+    width: 100%;
+  }
+  
+  .img2 {
+    width: 100%;
+  }
+  
+  .text-container {
+    flex-basis: 100%;
+    text-align: center;
+  }
+  
+  .privacy p {
+    margin: 0;
+    color: #FFA500;
+    text-align: left;
+    margin-right: 20px;
+  }
+  
+  .footer {
+    background-color: #430387;
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('./imagens/logo_yala.png'); /* Corrigindo o caminho da imagem */
+    background-size: contain; /* Ajustando o tamanho da imagem */
+    background-repeat: no-repeat; /* Evitando que a imagem se repita */
+    background-position: center; /* Posicionando a imagem no centro */
+}
+
+  
+  .logo img {
+    max-width: 100px;
+    height: auto;
+    margin: 20px;
+  }
+  
