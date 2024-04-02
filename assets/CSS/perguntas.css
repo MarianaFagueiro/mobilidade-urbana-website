@@ -9,15 +9,29 @@
   z-index: 1000;
   background-color: #430387; 
   color: #FFF; 
+  display: flex; /* Utiliza flexbox para organizar os elementos */
+  justify-content: space-between; /* Alinha os elementos ao longo do eixo principal com espaçamento uniforme */
+  align-items: center; /* Centraliza verticalmente os elementos */
+}
+
+.header nav {
+  margin-top: 10px; 
+  margin-right: 60px; /* Adicione margem direita para criar espaço entre os links e a borda direita da tela */
+}
+
+.header nav a {
+  text-decoration: none; 
+  color: #FFC745;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-left: 20px; 
 }
 
 .header img {
   max-width: 15%;
   height: auto;
-  display: block;
-  margin: 10px; 
-  margin-left: 45px;
+  margin-left: 45px; 
 }
+
 
 body {
   margin-top:70px; 
