@@ -1,98 +1,78 @@
 .header {
-    padding: 10px;
-    text-align: left;
-    margin: 0;
-    border-top: none;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    color: #430387;
-    background-image: url('./imagens/logo_yala.png'); /* Adicionando a imagem como fundo */
-    background-size: contain; /* Ajustando o tamanho da imagem */
-    background-repeat: no-repeat; /* Evitando que a imagem se repita */
-    background-position: center; /* Posicionando a imagem no centro */
+  padding: 10px;
+  text-align: left;
+  margin: 0;
+  border-top: none;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  background-color: #430387; 
+  color: #FFF; 
 }
 
-  .header img {
-    max-width: 15%;
-    height: auto;
-    display: block;
-    margin: 10px auto;
-  }
-  
-  body {
-    color: #F6F5F0;
-    margin-top: 80px;
-  }
-  
-  hr {
-    border: none;
-    border-top: 100px solid #2e2e2e;
-    margin-top: 4%;
-  }
-  
-  h1,
-  h2 {
-    color: #FFC745;
-    text-align: center;
-    margin-top: 0;
-    padding: 15px;
-  }
-  
-  h2 {
-    color: #430387;
-    text-align: center;
-    margin: 10px;
-    padding: 15px;
-  }
-  
-  .content-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-  
-  .img1 {
-    width: 100%;
-  }
-  
-  .img2 {
-    width: 100%;
-  }
-  
-  .text-container {
-    flex-basis: 100%;
-    text-align: center;
-  }
-  
-  .privacy p {
-    margin: 0;
-    color: #FFA500;
-    text-align: left;
-    margin-right: 20px;
-  }
-  
-  .footer {
-    background-color: #430387;
-    padding: 10px;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-image: url('./imagens/logo_yala.png'); /* Corrigindo o caminho da imagem */
-    background-size: contain; /* Ajustando o tamanho da imagem */
-    background-repeat: no-repeat; /* Evitando que a imagem se repita */
-    background-position: center; /* Posicionando a imagem no centro */
+.header img {
+  max-width: 15%;
+  height: auto;
+  display: block;
+  margin: 10px; 
+  margin-left: 45px;
 }
 
-  
-  .logo img {
-    max-width: 100px;
-    height: auto;
-    margin: 20px;
-  }
-  
+body {
+  margin-top:70px; 
+  border: 0;
+  margin: 0%;
+  margin-top: 5%;
+  background-color: #F6F3FC;
+}
+
+.img1 {
+  width: auto; 
+  object-fit: cover; 
+  padding-top:70px; 
+  margin-left:20%;
+  margin-right: auto; 
+}
+
+.img2 {
+  margin-left: 0; 
+  width: 350px;
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+.footer {
+  background-color: #430387; /* Cor roxa para o footer */
+  padding: 10px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+
+.footer .logo img {
+  max-width: 80px; /* Reduzindo o tamanho do logo no footer */
+  height: auto;
+  margin-left: 45px;
+}
+
+
+.side-text {
+  float: right; 
+  width: 40%; 
+  padding: 0 40px; 
+  margin-top: 120px; 
+  margin-right: 350px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #430387;
+
+}
+
+.privacy{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #FFC745;
+  margin-right: 45px;
+}
+
