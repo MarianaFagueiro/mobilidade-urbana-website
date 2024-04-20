@@ -54,9 +54,8 @@ a{
 .bloco2 {
     display: flex;
     align-items: center;
-    flex-direction: row-reverse;
-    margin: 0; 
-    margin-left: 20%;
+    margin: 0;
+    margin-left: 15%;
     margin-top: -10%;
     color: #430387;
 }
@@ -67,18 +66,25 @@ a{
 
 .img-left {
     order: 1;
-    width: 40%; 
-    height: auto; 
-    margin-right: 10%; 
-    margin-left: -70px;
+    width: 20%;
+    height: 20%;
+    margin-right: 10%;
     margin-top: 0;
     margin-bottom: 10%;
 }
 
-
 .img-right {
     order: 2;
 }
+
+.bloco2 img {
+    height: auto;
+    width: 40%;
+    margin-right: 10%;
+    margin-top: -5%;
+    margin-bottom: 7%;
+}
+
 
 .bloco1 img {
     width: 15%; 
@@ -114,6 +120,7 @@ a{
 h3 {
     color: #FFC745;
     text-align: left;
+    margin-left: 30px;
     margin: 15px; 
 
 }
