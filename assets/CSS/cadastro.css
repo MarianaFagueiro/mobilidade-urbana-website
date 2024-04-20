@@ -125,5 +125,27 @@ h3 {
     margin-top: -10px; 
 }
 
+@media only screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header img {
+        margin-bottom: 10px;
+    }
+
+    ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    form {
+        width: 90%;
+    }
+}
+
 
 

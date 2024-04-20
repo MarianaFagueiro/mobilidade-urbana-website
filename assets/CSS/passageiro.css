@@ -76,3 +76,23 @@ h3 {
     text-align: left;
     margin: 15px; 
 }
+
+@media only screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header img {
+        margin-bottom: 10px;
+    }
+
+    ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        margin: 10px;
+    }
+}

@@ -125,3 +125,30 @@ h3 {
 
 }
 
+@media only screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header img {
+        margin-bottom: 10px;
+    }
+
+    ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .bloco1,
+    .bloco2,
+    .bloco3 {
+        flex-direction: column;
+    }
+
+    .text-content,
+    .img-fluid {
+        max-width: 100%;
+    }
+}
+

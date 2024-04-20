@@ -119,3 +119,44 @@ h3 {
 }
 
 
+@media only screen and (max-width: 768px) {
+  .header {
+    text-align: center;
+  }
+
+  .banner {
+    text-align: center;
+  }
+
+  .footer {
+    text-align: center;
+  }
+
+  .footer .parceiros img {
+    max-width: 80%;
+    height: auto;
+  }
+
+  .footer {
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header img {
+    width: 100%;
+    margin: 0;
+  }
+
+  .banner img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+  }
+
+  .footer .parceiros img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
