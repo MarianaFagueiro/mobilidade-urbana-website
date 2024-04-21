@@ -50,12 +50,18 @@ h2{
   margin: 15px; 
 }
 
-.img1 { 
-  margin: 40px;
+.img-container {
+  display: flex;
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+.img1 {
   margin-top: 10px;
-  display: block;
   margin-bottom: 40px;
 }
+
+
+
 
 .footer {
   background-color: #430387;
