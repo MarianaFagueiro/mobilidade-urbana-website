@@ -11,7 +11,8 @@ body {
 .navbar{
     height: 150px;
     width: 100%;
-    background-color:#430387
+    background-color:#430387;
+    margin-bottom: 45px;
 }
 
 .navbar-nav .nav-item .nav-link.active {
@@ -31,91 +32,70 @@ body {
     color: #9666ca; 
 }
 
-h1 {
+.navbar-nav .nav-link.active::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #FFA500; /* Cor da linha */
+    margin-top: 3px; /* Espaçamento entre o link e a linha */
+  }
+
+
+h1.h1 {
     color: #430387;
     text-align: justify;
-    margin-left: 90px;
-    margin-top: 20px;
-}
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
 
-
-label {
-    display: block; 
-    margin-bottom: 10px; 
-    color: #430387;
-    margin-left: 90px;
-    font-weight: bold; 
-}
-
-input[type="email"]{
-    padding: 30px;
-    border-radius: 20px;
-    border: 2px solid #430387; 
-    width: 500px; 
-    margin-bottom: 0px;
-    margin-left: 90px;
-}
-
-input[type="tel"]{
-    padding: 30px;
-    border-radius: 20px;
-    border: 2px solid #430387; 
-    width: 500px; 
-    margin-bottom: 0px;
-    margin-left: 70px;
-}
-
-#submitButton {
-    background-color: #430387; 
-    color: #FFC745; 
-    border: none; 
-    border-radius: 10px; 
-    width: 100px; 
-    height: 40px;
-    font-size: 30px; 
-    cursor: pointer; 
-    margin-left: 90px;
-    margin-top: 10px;
-    align-items: center;
-    line-height: 40px; 
-    display: flex;
-    justify-content: center;
-    padding-top: 7px; 
-    font-size: medium;
-    }
-    
-
-.label{ 
-    color: #430387;
-    font-weight: bold;  
-    font-size: large;
-   
-}
-
-label > input[type="radio"] + span {
+  label {
     color: #430387;
     font-weight: bold;
-    margin-right: 10px; 
-    margin-left: 20px; 
+  }
+
+
+  input[type="email"], input[type="tel"] {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #430387;
+    margin-bottom: 20px;
+  }
+
+  .form-control.custom-input{
+    width: 600px; 
 }
+
+  #submitButton {
+    background-color: #430387;
+    color: #FFC745;
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+    font-size: medium;
+    cursor: pointer;
+    align-items: center;
+    line-height: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
 
 
 .footer {
     background-color: #430387;
     padding: 30px;
-    margin-top: 50px;
+    margin-top: 11%;
     margin-bottom: 0;
-    display: grid; 
-    grid-template-columns: auto 1fr; 
-    gap: 20px; 
-}
+  }
 
-.footer h3 {
+  .footer h3 {
     color: #FFC745;
     text-align: left;
-    margin: 15px; 
+    margin: 15px;
     font-size: 15px;
-}
+  }
 
 @media (max-width: 991.98px) {
     .navbar-toggler {

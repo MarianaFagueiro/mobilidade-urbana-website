@@ -9,89 +9,99 @@
 </head>
 <body>
     <header class="navbar">
-        <nav class="navbar navbar-expand-lg navbar-light bg">
-            <div class="container-fluid">
-                <!-- Logo -->
-                <a class="navbar-brand" href="#">
-                    <img class="logo" src="/assets/imagens/logo_yala.png" alt="Logo">
-                </a>
-                <!-- Botão do menu para telas menores -->
-                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>                        
-                <!-- Menu -->
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Página Inicial</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="cadastro.html">Cadastro</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="motorista.html">Motorista</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="passageiro.html">Passageiro</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="missao.html">Missão</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="perguntas.html">Perguntas Frequentes</a>
-                        </li>
-                    </ul>
-                </div>
+      <nav class="navbar navbar-expand-lg navbar-light bg">
+        <div class="container-fluid">
+          <!-- Logo -->
+          <a class="navbar-brand" href="#">
+            <img class="logo" src="/assets/imagens/logo_yala.png" alt="Logo">
+          </a>
+          <!-- Botão do menu para telas menores -->
+          <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Menu -->
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Página Inicial</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="cadastro.html">Cadastro</a>
+            </li>            
+              <li class="nav-item">
+                <a class="nav-link" href="motorista.html">Motorista</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="passageiro.html">Passageiro</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="missao.html">Missão</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="perguntas.html">Perguntas Frequentes</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+  
+    <main>
+      <div class="container">
+        <h1 class="h1">Cadastre-se agora.<br>Os primeiros inscritos terão benefícios especiais!</h1>
+  
+        <form id="Form">
+            <div class="mb-3">
+              <label for="email" class="form-label">Email:</label>
+              <input type="email" id="email" name="email" class="form-control custom-input" placeholder="Seu email" required>
             </div>
-        </nav>
-      </header>
-<main>
-    <h1 class="h1">Cadastre-se agora. 
-        <br> Os primeiros inscritos terão benefícios especiais!</h1> <br>    
+          
+            <div class="mb-3">
+              <label for="telefone" class="form-label">Telefone:</label>
+              <input type="tel" id="telefone" name="telefone" class="form-control custom-input" placeholder="Seu telefone" required>
+            </div>          
 
-    <form id="Form">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Seu email" required> <br><br>
-
-        <label for="telefone">Telefone:</label>
-        <input type="tel" id="telefone" name="telefone" placeholder="Seu telefone" required><br><br>
-        <br><br>
-        <label for="options" class="label">Tenho interesse em ser:</label><br>
-        <label>
-            <input type="radio" name="options" id="motorista" value="motorista">
-            <span>Motorista</span>
-        </label><br>
-        
-        <label>
-            <input type="radio" name="options" id="passageiro" value="passageiro">
-            <span>Passageiro</span>
-        </label><br>
-    </form>
-
-    <button id="submitButton">Entre já</button>
-
+          <div class="mb-3">
+            <label for="interesse" class="label">Tenho interesse em ser:</label><br>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="options" id="motorista" value="motorista">
+              <label class="form-check-label" for="motorista">Motorista</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="options" id="passageiro" value="passageiro">
+              <label class="form-check-label" for="passageiro">Passageiro</label>
+            </div>
+          </div>
+          
+  
+          <button id="submitButton" type="button">Entre já</button>
+        </form>
+      </div>
+    </main>
+  
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        document.getElementById('submitButton').addEventListener('click', function() {
-            var email = document.getElementById('email').value;
-            var telefone = document.getElementById('telefone').value;
-
-            if (email.trim() !== '' && telefone.trim() !== '') {
-                alert('Formulário enviado com sucesso!');
-            } else {
-                alert('Por favor, preencha todos os campos.');
-            }
-        });
+      document.getElementById('submitButton').addEventListener('click', function() {
+        var email = document.getElementById('email').value;
+        var telefone = document.getElementById('telefone').value;
+  
+        if (email.trim() !== '' && telefone.trim() !== '') {
+          alert('Formulário enviado com sucesso!');
+        } else {
+          alert('Por favor, preencha todos os campos.');
+        }
+      });
     </script>
-</main>
 <footer class="footer cadastro">
-    <table aria-label="Termos de privacidade">
-        <tr>
-            <th>
-                <h3>Termos de privacidade</h3>
-            </th>
-        </tr>
-    </table>
-</footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <h3>Termos de privacidade</h3>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
 

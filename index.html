@@ -4,45 +4,58 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yala</title>
+  <!-- Adicionando Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Seu CSS personalizado -->
   <link rel="stylesheet" href="./assets/CSS/style.css"> 
 </head>
 <body>
 
-
   <header class="header">
-    <a href="./cadastro.html"><button>Começe já</button></a>
-    <img src="./assets/imagens/logo_yala.png" class="img-fluid" alt="logo">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-auto">
+          <img src="./assets/imagens/logo_yala.png" class="img-fluid" alt="logo">
+        </div>
+        <div class="col-auto ms-auto me-0">
+          <a href="./cadastro.html" class="btn btn-custom">Começe já</a>
+        </div>
+      </div>
+    </div>
     <hr>
   </header>
 
   <main>
     <section class="banner"> 
-      <h1> 
-        Faça corridas com <br> 
-        as melhores tarifas 
-      </h1>
-      <p> 
-        <h2>
-          Descubra a liberdade com Yala! Seu ingresso para uma jornada sem complicações. <br>
-          Com nosso aplicativo intuitivo, solicitar uma corrida é fácil como um clique.<br>
-          Motoristas confiáveis, viagens seguras. 
-        </h2>
-      </p>
-      <p> 
-        <h3> 
-          <b>
-            Em breve disponível para baixar.
-          </b>
-        </h3>
-      </p>
-      <img src="./assets/imagens/imagem_banner.png" class="img-fluid" alt="Celulares">
-      <a href="./cadastro.html"><button>Cadastre-se</button></a>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h1>Faça corridas com<br>as melhores tarifas</h1><br>
+            <h2>
+              Descubra a liberdade com Yala! Seu ingresso para uma jornada sem complicações.
+              Com nosso aplicativo intuitivo, solicitar uma corrida é fácil como um clique.
+              Motoristas confiáveis, viagens seguras. 
+            </h2><br>
+            <h3><b>Em breve disponível para baixar.</b></h3><br>
+            <a href="./cadastro.html" class="btn btn-custom">Cadastre-se</a>
+          </div>
+          <div class="col-lg-6">
+            <img src="./assets/imagens/imagem_banner.png" class="img-fluid" alt="Celulares">
+          </div>
+        </div>
+      </div>
     </section>
   </main>
-  <div class="footer">
-    <div class="parceiros">
-      <img src="./assets/imagens/parceiros.png" class="img-fluid" alt="Parceiros">
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <img src="./assets/imagens/parceiros.png" class="img-fluid" alt="Parceiros">
+        </div>
+      </div>
     </div>
-  </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
