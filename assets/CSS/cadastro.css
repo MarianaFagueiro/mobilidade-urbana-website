@@ -1,56 +1,50 @@
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: 0;
-    padding: 0;
     background-color: #dcdcdc3b;
 }
 
-.header {
-    background-color: #430387;
-    padding: 35px; 
-}
-
-.header img {
-    max-width: auto; 
-    height: 70px; 
-    float: left; 
-    margin-top: -15px;
+ .logo{ 
+    transform: scale(0.5);
     margin-left: 50px;
 }
 
-ul{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    color: #FFA500;
-    margin-top: 10px;
-    font-size: larger;
+.navbar{
+    height: 150px;
+    width: 100%;
+    background-color:#430387
 }
 
-li{
-    margin: 1px;
-    cursor: pointer;
-    margin-left: 30px;
+.navbar-nav .nav-item .nav-link.active {
+    color: #FFA500; 
 }
 
-a{ 
-    text-decoration: none;
+.navbar-nav .nav-item .nav-link.active:hover {
+    color: #9666ca; 
+}
+
+.navbar-nav .nav-item .nav-link {
     color: #FFA500;
 }
 
-h1{ 
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #9666ca; 
+}
+
+h1 {
     color: #430387;
     text-align: justify;
     margin-left: 90px;
     margin-top: 20px;
 }
 
+
 label {
     display: block; 
     margin-bottom: 10px; 
     color: #430387;
-    margin-left: 90px; 
+    margin-left: 90px;
+    font-weight: bold; 
 }
 
 input[type="email"]{
@@ -68,7 +62,7 @@ input[type="tel"]{
     border: 2px solid #430387; 
     width: 500px; 
     margin-bottom: 0px;
-    margin-left: 90px;
+    margin-left: 70px;
 }
 
 #submitButton {
@@ -76,76 +70,80 @@ input[type="tel"]{
     color: #FFC745; 
     border: none; 
     border-radius: 10px; 
-    width: 150px; 
+    width: 100px; 
     height: 40px;
-    font-size: 20px; 
+    font-size: 30px; 
     cursor: pointer; 
     margin-left: 90px;
+    margin-top: 10px;
     align-items: center;
     line-height: 40px; 
     display: flex;
     justify-content: center;
     padding-top: 7px; 
-    text-align: center;
+    font-size: medium;
     }
     
 
-label{ 
+.label{ 
     color: #430387;
     font-weight: bold;  
     font-size: large;
    
 }
 
-input[type="radio"] + span {
+label > input[type="radio"] + span {
     color: #430387;
     font-weight: bold;
     margin-right: 10px; 
     margin-left: 20px; 
 }
 
+
 .footer {
     background-color: #430387;
-    padding: 35px;
-    margin-top: 30px;
-    margin-right: 0;
-    margin-left: 0;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
-    gap: 20px;
-    padding-left: 80px; 
+    padding: 30px;
+    margin-top: 50px;
+    margin-bottom: 0;
+    display: grid; 
+    grid-template-columns: auto 1fr; 
+    gap: 20px; 
 }
 
-
-h3 {
+.footer h3 {
     color: #FFC745;
     text-align: left;
-    margin-left: 20px; 
-    margin-top: -10px; 
+    margin: 15px; 
+    font-size: 15px;
 }
 
-@media only screen and (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        text-align: center;
+@media (max-width: 991.98px) {
+    .navbar-toggler {
+        position: absolute;
+        top: 55px; /* Ajuste o valor conforme necessário */
+        right: 30px; /* Ajuste o valor conforme necessário */
+        z-index: 2000; /* Garante que o botão hamburguer esteja acima do menu */
+    }
+    .navbar-collapse {
+        position: fixed;
+        top: 120px; /* Ajuste o valor conforme necessário */
+        right: -200px; /* Esconde o menu à direita */
+        bottom: 0;
+        background-color: #430387; /* Ajuste a cor de fundo conforme necessário */
+        border-radius: 5px; /* Arredonda as bordas */
+        padding: 10px; /* Adiciona um espaço interno */
+        width: 200px; /* Defina a largura do menu */
+        text-align: right; /* Alinha os itens do menu à direita */
+        z-index: 1000; /* Garante que o menu esteja acima do conteúdo */
+        transition: right 0.3s ease; /* Adiciona uma transição suave ao mover o menu */
+    }
+    .navbar-collapse.show {
+        right: 0; /* Move o menu para a esquerda quando aberto */
     }
 
-    .header img {
-        margin-bottom: 10px;
-    }
-
-    ul li {
-        display: block;
-        margin-bottom: 10px;
+    .nav-link, nav-link.activate{
+      margin-right: 30px;
+      color: #FFA500;
     }
 }
-
-@media only screen and (max-width: 600px) {
-    form {
-        width: 90%;
-    }
-}
-
-
-
+  
