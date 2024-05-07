@@ -41,6 +41,10 @@ body {
     margin-top: 3px; /* Espaçamento entre o link e a linha */
   }
 
+  .navbar-toggler.custom-toggler .navbar-toggler-icon {
+    color: #FFA500 !important;
+}
+
 
 h1.h1 {
     color: #430387;

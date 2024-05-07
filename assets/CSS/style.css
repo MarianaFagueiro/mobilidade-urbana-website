@@ -18,7 +18,7 @@ body {
 .banner {
   background-color: #430387;
   color: #FFC745;
-  padding: 20px;
+  padding: 30px;
 }
 
 .banner h1 {
@@ -36,15 +36,15 @@ body {
 }
 
 .btn-custom {
-  background-color: #FFC745; /* Amarelo */
-  color: #430387; /* Roxo */
-  border-color: #FFC745; /* Cor da borda igual ao fundo */
+  background-color: #FFC745; 
+  color: #430387; 
+  border-color: #FFC745; 
 }
 
 .btn-custom:hover {
-  background-color: #ffd56b; /* Amarelo mais claro no hover */
-  color: #430387; /* Roxo */
-  border-color: #ffd56b; /* Cor da borda igual ao fundo */
+  background-color: #ffd56b; 
+  color: #430387;
+  border-color: #ffd56b; 
 }
 
 .align-right {
@@ -57,7 +57,7 @@ body {
 }
 
 .footer img {
-  max-width: 70%; /* Reduzindo o tamanho da imagem do footer */
+  max-width: 70%;
   height: auto;
 }
 
@@ -69,7 +69,7 @@ body {
   }
 
   .header img {
-    margin-right: 15px; /* Adicionando margem à direita para separar o logo do texto */
+    margin-right: 15px; 
   }
 }
 
