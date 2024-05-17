@@ -67,7 +67,7 @@ h1.h1 {
   }
 
   .form-control.custom-input{
-    width: 600px; 
+    max-width: 600px; 
 }
 
   #submitButton {
